@@ -38,3 +38,7 @@ jobs:
         cd infra_project/
         # запустить написанные разработчиком тесты
         python manage.py test
+    - name: Push to DockerHub
+      run: |
+        docker tag infra_actions:latest infra_actions:latest
+        docker push infra_actions:latest
