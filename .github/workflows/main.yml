@@ -77,4 +77,4 @@ jobs:
           sudo docker pull pvasily/infra_action
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a)
-          sudo docker run --rm -d -p 5000:5000 pvasily/infra_action 
+          sudo docker run --rm -d -p 5050:5050 pvasily/infra_action 
